@@ -8,6 +8,7 @@ The application demonstrates the following key areas of technical interest:
 * Creating Context objects, setting default data values on them and/or passing data into Context using a Provider object
 * Reading data from Context either by using `this.context` or using the Consumer object
 * Pulling data from multiple Contexts inside of a single component. See the Button component for an example of nested Consumers.
+* Additionally, the `replace-redux` branch of this project has some additional code that demonstrates how you might use Context as a replacement for Redux by moving business logic and state management into a 'store' component. (See the LanguageStore component inside of LanguageContext.js)
 
 All instructions for this project came from the excellent [Udemy Modern React with Redux course](https://www.udemy.com/react-redux/).
 
