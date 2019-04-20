@@ -1,3 +1,16 @@
+This is a proof-of-concept project that explores how the [React Context](https://reactjs.org/docs/context.html) system works. It displays a simple form with a language selector at the top of the screen that can toggle the language of the form. 
+
+The language selection is stored in the local state of the parent <App /> component. Using the LanguageContext object, the language selection communicated down to the nested <Button /> and <Field /> child components.
+
+The application demonstrates the following key areas of technical interest:
+
+* Using React's [Context](https://reactjs.org/docs/context.html) system to directly communicate data from a parent component to a nested child, bypassing intermediate components
+* Creating Context objects, setting default data values on them and/or passing data into Context using a Provider object
+* Reading data from Context either by using `this.context` or using the Consumer object
+* Pulling data from multiple Contexts inside of a single component. See the Button component for an example of nested Consumers.
+
+All instructions for this project came from the excellent [Udemy Modern React with Redux course](https://www.udemy.com/react-redux/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
